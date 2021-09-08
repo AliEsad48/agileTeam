@@ -19,80 +19,40 @@ public class Products {
         return snicker;
     }
 
-    public void setSnicker(double snicker) {
-        this.snicker = snicker;
-    }
-
     public double getChipsAhoy() {
         return chipsAhoy;
-    }
-
-    public void setChipsAhoy(double chipsAhoy) {
-        this.chipsAhoy = chipsAhoy;
     }
 
     public double getPringles() {
         return pringles;
     }
 
-    public void setPringles(double pringles) {
-        this.pringles = pringles;
-    }
-
     public double getMilano() {
         return milano;
-    }
-
-    public void setMilano(double milano) {
-        this.milano = milano;
     }
 
     public double getReeses() {
         return reeses;
     }
 
-    public void setReeses(double reeses) {
-        this.reeses = reeses;
-    }
-
     public double getCocaCola() {
         return cocaCola;
-    }
-
-    public void setCocaCola(double cocaCola) {
-        this.cocaCola = cocaCola;
     }
 
     public double getFanta() {
         return fanta;
     }
 
-    public void setFanta(double fanta) {
-        this.fanta = fanta;
-    }
-
     public double getWater() {
         return water;
-    }
-
-    public void setWater(double water) {
-        this.water = water;
     }
 
     public double getArizona() {
         return arizona;
     }
 
-    public void setArizona(double arizona) {
-        this.arizona = arizona;
-    }
-
     public double getSkittles() {
         return skittles;
-    }
-
-    public void setSkittles(double skittles) {
-        this.skittles = skittles;
     }
 
     public int getProductNum() {
