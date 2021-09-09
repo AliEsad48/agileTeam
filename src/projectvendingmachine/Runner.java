@@ -7,8 +7,8 @@ public class Runner {
         double money = methods.money();
         System.out.println("Hesabinizda " + money + " dollar var");
         product.setPrice(methods.select(product));
-        money=methods.balance(product.getPrice(), money, product);
-        methods.purchase(product.getPrice(), money , product);
+        money = methods.balance(product.getPrice(), money, product);
+        methods.purchase(product.getPrice(), money, product);
 
     }
 }

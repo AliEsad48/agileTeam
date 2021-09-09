@@ -69,64 +69,60 @@ public class Methods {
 
     public double balance(double price, double money, Products product) {
 
-       double eklenecek;
+        double eklenecek;
 
         while (money < price) {
             Scanner scan = new Scanner(System.in);
             System.out.println("Bakiye yetersiz, para eklemek istermisiniz ? (Y/N)");
             char onay = scan.next().toUpperCase().charAt(0);
 
-            if(onay=='N'){
+            if (onay == 'N') {
                 System.out.println("Bakiyeniz " + money);
                 System.out.println("Tesekkur eder tekrar bekleriz...");
                 break;
-            }else if (onay=='Y'){
+            } else if (onay == 'Y') {
                 System.out.println("Ne kadar eklemek istersiniz?");
-                eklenecek= scan.nextDouble();
-                money=money + eklenecek;
+                eklenecek = scan.nextDouble();
+                money = money + eklenecek;
                 System.out.println("Hesabınızda " + money + " dollar var");
-                price=select(product);
-            }else {
+                price = select(product);
+            } else {
                 System.out.println("Lutfen ''Y' veya 'N' seciniz...");
             }
         }
-         return money;
+        return money;
     }
 
 
-    public void purchase(double price , double money , Products product){
+    public void purchase(double price, double money, Products product) {
 
-        while (money>=product.getPrice()){
+        while (money >= product.getPrice()) {
 
-            money =money - product.getPrice();
+            money = money - product.getPrice();
 
             System.out.println("Hesabınızda " + money + " dollar var");
 
-            Scanner scan=new Scanner(System.in);
+            Scanner scan = new Scanner(System.in);
 
             System.out.println("Alışverişe devam etmek ister misiniz? (Y/N)");
 
-            char onay=scan.next().toUpperCase().charAt(0);
+            char onay = scan.next().toUpperCase().charAt(0);
 
             if (onay == 'N') {
 
                 System.out.println("Teşekkür eder , yine bekleriz......");
                 break;
 
-            }else if (onay == 'Y'){
+            } else if (onay == 'Y') {
 
                 product.setPrice(select(product));
 
-                money=balance(product.getPrice() , money , product);
+                money = balance(product.getPrice(), money, product);
 
 
-
-            }else {
+            } else {
 
                 System.out.println("Lütfen 'Y' veya 'N' den birini seçiniz....");
-                System.out.println("Alışverişe devam etmek ister misiniz? (Y/N)");
-
-                onay=scan.next().toUpperCase().charAt(0);
 
 
             }
@@ -134,11 +130,6 @@ public class Methods {
         }
 
     }
-
-
-
-
-
 
 
 }
