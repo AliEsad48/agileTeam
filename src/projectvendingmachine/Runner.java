@@ -10,5 +10,6 @@ public class Runner {
         money = methods.balance(product.getPrice(), money, product);
         methods.purchase(product.getPrice(), money, product);
 
+
     }
 }
